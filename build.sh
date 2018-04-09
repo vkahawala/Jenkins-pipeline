@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python -m unittest tests.test_app
+python3 -m unittest tests.test_app
