@@ -6,6 +6,11 @@ BUILD_HOME='/var/lib/jenkins/workspace'
 }
 agent any
 stages {
+stage('cleanup'){
+    steps{
+        cleanWs()
+    }
+}
 stage('Checkout: Code') {
 steps {
 sh "mkdir -p $WORKSPACE/repo;\
