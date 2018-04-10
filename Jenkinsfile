@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Checkout: Code') {
             steps {
-                sh "mkdir -p $WORKSPACE/repo";\
+                sh "mkdir -p $WORKSPACE/repo;\
                 git config --global user.email 'venura.kahawalage@mclaren.com';\
                 git config --global user.name 'vkahawala';\
                 git config --global push.default simple;\
