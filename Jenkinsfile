@@ -6,11 +6,6 @@ pipeline {
     }
     agent any
     stages {
-        stage('cleanup'){
-            steps{
-                cleanWs()
-            }
-        }
         stage('Build') {
             steps {
                 sh "chmod +x $WORKSPACE/build.sh"
